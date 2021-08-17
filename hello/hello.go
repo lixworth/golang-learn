@@ -19,4 +19,14 @@ func main() {
 
 	fmt.Printf(message1)
 	fmt.Printf(message)
+
+	names := []string{"lixworth","dhdj","nyancat"}
+
+	messages,err := greetings.Hellos(names)
+
+	if err != nil{
+		log.Fatal(err)
+	}
+
+	fmt.Println(messages)
 }
